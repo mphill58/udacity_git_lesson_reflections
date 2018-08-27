@@ -1,0 +1,22 @@
+In lesson 1 I learned four git commands:
+1. git clone repository_url
+	a command to clone a repository from git - all versions of the files get cloned to your local directory
+2. git diff old_id new_id
+	compare two git commits, an older one to a newer one, and see how many  and which lines changed
+3. git log
+	look at a history of commits from newest at the top to oldest. shows the commit ID and a comment 
+4. git checkout commit_id
+	look at an older commit 
+
+
+new command:
+git init
+	creates a .git repositroy
+git status
+	shows which files have changed since the last commit
+
+
+
+What happens when you initialize a repository? Why do you need to do it?
+
+when you initialize a repository a .git directory is created. This is necessary because it is within this hidden directory that git saves all the relevant metadata that allows you to keep track of versions of your files.

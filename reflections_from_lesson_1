@@ -1,0 +1,22 @@
+Reflections from Lesson 1
+
+Viewing the difference between files allows me to immediately see where the two versions differ. Lines that pop up as different that I didn't expect to be different raise red flags - perhaps they were changed unintentionally. Lines that show up as different that I know I changed can more easily be checked for typos because they're isolated from the rest of the code. 
+
+I want to start using version control for my MatLab code. I wonder if the Diff program will work for this. I need to hunt down all the different versions of the code that I have out there and find the ones that work... this will be annoying. 
+
+Having a history of versions can help me see how the document has evolved through time, and could likely help me make a better version in the future by seeing the process through which the document has evolved. 
+
+ Manual Commits
+ The pros of manually choosing when to commit a file is that you can use your judement on when is the right time to save a commit. On the other hand, you might forget to commit and lose some information because of that. Versions that automatically save might do so too often or at arbitrary times that save files that won't even compile. 
+
+ Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+ This is probably true because of the nature of each program. In google docs, you're probably mostly working on single documents that are independent of other documents. Whereas with Git it's probably more common to be working on programming projects where multiple files are interdependent on each other. 
+
+ How can you use the commands git log and git diff to view the history of files?
+Use git log to view all the ids of all the commits and the comments associated with each commit. Then use git diff old_id new_id to view the changes that took place between the two commits. 
+
+How might using version control make you more confident to make changes that could break something?
+Using version control allows you to go back to previous versions of the code that work, so making a code that breaks isn't as big of a deal.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+Matlab code!
