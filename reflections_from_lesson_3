@@ -5,5 +5,5 @@ ipython on github a nicer shell than the default one.
 When would you want to use a remote repository rather than keeping all your work local?
 when working with other people on the same project all making changes in parallel.
 
-time'll make the change, ch-ch-changes.
-
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+there might be changes to the remote that you don't want to have expressed locally, or vice-versa
