@@ -1,0 +1,51 @@
+New commands
+
+git chekout master
+	restores git log to most up to date version. If you're checking out old versions and want to go back to most recent, you can use this.
+
+git diff
+	compares working directory to staging area
+
+git diff --staged
+	compares staging area to most recent commit
+
+git reset --hard
+	deletes any changes made to files. be super careful with this because there's no way to recover lost info.
+
+
+How can you use the staging area to make sure you have one commit per logical change?
+	You could compare the staging area to the most recent commit and when you feel like there's been enough changes between the two, then you can commit the changes.
+
+Branching commit histories: useful for Matlab programs I think.
+
+Master is the main branch in git repositories. You can have offshoots of the master branch.
+Can combine two branches using a function called "merging"
+
+making an easy-mode for asteroids game as an example.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+When making different versions of a program that's mostly the same. For me, I could have branched my resize image into an interactive and hard-coded versions, and to a version that tries to work on bigger images. 
+
+git checkout -b new_branch_name
+	basically running git branch new_branch_name then running git checkout on that branch.
+
+if you go back to checkout out an old version, then commit changes, if you return to master branch that commit will be lost. You can save it as a new branch though by running the above command.
+
+How do the diagrams help you visualize the branch structure?
+Diagrams show how different branches relate to eachother "spatially" and also in time. nodes further right have parents to the left. Some nodes are unreachable, unless you make new branches out of them before returning further "upstream" on a different branch.
+
+git can merge two branches, keeping changes made in both branches (not sure how this works tbh...).
+
+When merging two branches one is merged into the other. In this example, we want to merge coins into master, we want the coin updates to be added to the current master version. This will make a new master branch with coin code. 
+
+running git diff on merged branch ids can be done but may show a bunch of changes not relevant. You can run git show, showing the diff between an ID and its parent.
+
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+Merging two branches is done with git merge main_branch merging_branch. This puts all the commits from the merging branch into the main branch, and makes new files including changes from the merging branch, but keeping the main branch the way it is. So, if you added lines in the offshoot branch, those will be added, but if you deleted lines that are in the main branch, the ones in the main branch stay there. 
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+auto merging is good for simple files that have discrete changes to different lines, like adding or removing lines. But it can be complicated if people working in parallel modify the same lines. In this case you have to decide whose changes to keep manually. 
+
+
+
