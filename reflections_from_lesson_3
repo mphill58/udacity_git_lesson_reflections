@@ -7,3 +7,25 @@ when working with other people on the same project all making changes in paralle
 
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 there might be changes to the remote that you don't want to have expressed locally, or vice-versa
+
+forking
+a lot like cloning, but on the github servers.
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+Fork is a clone of a github repository. It's useful if you want to make changes to someone else's files and maintain contribution to their work up to that point. You can fork the repository, then clone it to your local device and work on it, push changes back to github. This can be done in parallel to someone else working on those files as well, then both of your changes can be merged, all while maintaining contribution to the original person's work. Clones are copies of repositories on local machines, or from github to local. Branches are splitting a current repository into a parallel repository for working on stuff while maintaining what was originally there. Good for working on alternate versions of the same thing or trying out experimental stuff. Branches can be merged back together too.
+
+git pull remote branch
+	pulls down and merges remote to local repository
+git push remote branch
+	pushes up and merges local to remote
+git fetch
+	updates local by making a new branch. can merge later. This is what happens in a git pull.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+you can work on the files while offline.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+I usually collaborate with google driver. Then interface is easier, but keeping track of changes made by multiple people on a singel document is harder. Except, google docs, because everyone makes changes to the same document online. But you need internet. 
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+When you want collaborators to view the changes you've made and make sure they're alright before merging them into the master. This adds complexity to the process, though.
